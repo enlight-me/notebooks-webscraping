@@ -42,3 +42,25 @@ Sseful commands
 sudo systemctl stop msprh-fetch-scheduler.service          #To stop running service 
 sudo systemctl restart msprh-fetch-scheduler.service       #To start running service  
 ```
+## Display directory content with php script
+
+```php
+<head>
+        <title>MSPRH Covid-19 Datasets</title>
+</head>
+<body>
+<?php
+$d = dir("./datasets/msprh-covid-19");
+
+echo "Path: " . $d->path . "\n";
+echo "<ul>";
+while (false !== ($entry = $d->read())) {
+        if ($entry != "." && $entry != "..") {
+                echo "<li><a href='./datasets/msprh-covid-19/{$entry}'>{$entry}</a></li>>
+        }
+}
+echo "</ul>";
+$d->close();
+?>
+</body>
+```
