@@ -1,0 +1,14 @@
+# Please set the script directory before installation
+
+[Unit]
+Description=msprh-fetch-scheduler
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/.../notebooks-webscraping/msprh-covid-19/msprh-fetch-scheduler.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

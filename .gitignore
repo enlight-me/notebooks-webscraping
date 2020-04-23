@@ -12,6 +12,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+web-scrap-env/
 eggs/
 .eggs/
 lib/
@@ -24,6 +25,7 @@ pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+.vscode/
 *.egg
 MANIFEST
 
