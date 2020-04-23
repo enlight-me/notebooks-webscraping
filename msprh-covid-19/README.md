@@ -5,7 +5,7 @@ Web Scraping scripts for the ArcGIS REST Services diplaying a dashboard of COVID
 ## Content
 
 * [web-scraping-mpsrh-covid19-arcgis.ipynb](./web-scraping-mpsrh-covid19-arcgis.ipynb) jupyter notebook explaining main tasks
-* [mpsrh-fetch-scheduler.py](./mpsrh-fetch-scheduler.py) web scraping script
+* [msprh-fetch-scheduler.py](./msprh-fetch-scheduler.py) web scraping script
 * [msprh-fetch-scheduler.service](./msprh-fetch-scheduler.service) system service configuration file
 
 ## Setup
